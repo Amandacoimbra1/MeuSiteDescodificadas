@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça sua inscrição</title>
+    <link rel="shortcut icon" href="/imagens/running.ico" type="imagens/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inscrição Desafio Virtual</h1>
+    <h4>Inscrições de 21/02 a 30/06/2023</h4>
+    <br><br>
+    <h3 style="color:blueviolet">1ª Corrida Descodificadas</h3>
+    <img src="/Imagens/Distâncias.jpg" width="500" height="400">
+    <br><br>
+    <fieldset id="usuario"><legend> Identificação do Usuário</legend>
+        <label for="nome">Nome:</label><form><input type="text" size="50"></form>
+    <br>
+        <form method="get" action="envio_dados.php">
+        <input type="email" name="enviar" placeholder="Digite seu e-mail">
+        <input type="submit" name="enviar" value="Enviar">
+        </form>
+        <br>
+    
+<form>
+    <label for="nome">Somente os números do seu CPF:</label><br>
+    <input type="numbers" name="CPF" size="8" maxlength="11">
+</form>
+<br>
+<form>
+        Data de nascimento: <input type="date" name="nascimento">
+    </form>
+<br>
+<form>
+    <label for="nome">Modalidade:</label><br>
+ <input type="radio" name="Modalidade">Caminhada 5KM
+ <br>
+ <input type="radio" name="Modalidade">Caminhada 10KM
+ <br>
+ <input type="radio" name="Modalidade">Corrida 5KM
+ <br>
+ <input type="radio" name="Modalidade">Corrida 10KM
+</form>
+<br>
+<form>
+<label>Tamanho da Camiseta:</label>
+<select type="size" name="size" id="csize">
+<option>PP</option>
+<option>P</option>
+<option>M</option>
+<option>G</option>
+<option>GG</option>
+<option>XG</option>
+<option>XXG</option>
+    </select>
+</form>
+<br>
+<form>
+    <label>Forma de pagamento:</label><br><br>
+    
+    <input type="radio" name="Modalidade">Boleto Bancário<br>
+    <a target="blank" href="">Clique aqui para gerar o boleto</a>
+ <br><br>
+ <input type="radio" name="Modalidade">QRcode<br>
+ <img src="/Imagens/QRcode.png" width="100" height="100">
+ <br><br>
+ <input type="radio" name="Modalidade">PIX: 999.999.999-99
+ <br>
+</form>
+<br><br><br>
+<form>
+    <input type="submit" name="enviar" value="Enviar">
+</form>
+</fieldset>
+
+
+    <footer id="rodape">
+        <p>Copyright &copy: 2023 - by Amanda dos Anjos Coimbra </p>
+    </footer>
+</body>
